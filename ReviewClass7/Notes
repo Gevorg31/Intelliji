@@ -1,0 +1,38 @@
+Types of variables in Java:
+    We have 3 types of variables 1) Local 2) Instance 3) Static
+
+Local Variable:
+    Re the variables that we declare inside a block of code
+    upSide: They occupy the memory for shortest period og the time
+    downSide: They can't be accessed outside of that block in which they are declared
+Instance Variables
+    Are the variables that are declared inside a class but outside a block of code.
+    upSide: Can be accessed in all the methods of class. They can have different values
+    for each instance of that class
+Static variable
+    All the variables which are defined outside of a block of code with static keyword they are
+    called static variables.
+    upSide:
+    They only reserve a single memory location for all the instances of a class
+    They can be accessed by just writing the name of the class and variable name
+    downSide:
+    They occupy the memory for longest period of time they always store only one value for all the object of that class.
+Real Life use:
+    Most of the times you will be storing constant values static variables
+    Static is also used heavily with methods that don't
+Accessed modifiers:
+    There are 3 access modifier keywords(private, protected, public)
+    and four access levels(private, protected, public, default) in Java.
+Rules:
+    Access modifier can only be used with instance and static members of a class(field and methods)
+Private:
+    When we use private with any method or variable we can only access that method or variable in that class
+Default(it's not a keyword):
+    We can access that member inside the same class the same package in the other classes
+Public:
+    When we use the public access modifier with members of a class it is available throughout that project.
+Real life use:
+    99% of the time instance fields are always private.
+    99% of the time Instance and static methods are public.
+========================================================================================================================
+
