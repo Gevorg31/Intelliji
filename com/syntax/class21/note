@@ -1,0 +1,37 @@
+What is super keyword:
+    super keyword is used to refer to the parent class object.
+Wgy should we learn super keyword.
+    1) If we have same name variable or method in the super/parent/base class then we can use the keyword
+    to refer to parent class variable or method because by default java prefers the variables of child class.
+    We can also call the super class constructor with help of super with parenthesis super()
+How to use super keyword:
+    1) We can use super. method name or field name to call the method or to access the field of super class
+    2) Use super with parenthesis to call the super class constructor.
+Rules:
+    1) We can only access the immediate parent class constructor or field or method with the help of super keyword.
+    2) We can onl use super() inside a constructor.
+    3) If we have a user created constructor in the parent class we must have a matching parameter
+    constructor inside the child classes as well.
+    4) If we have multiple constructors inside the parent ass soon as one is ,attached we are good to go.
+    We don't need to match each and avery constructor from the parent class
+    5) super() should be the first line inside a constructor.
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Important:
+    1 Arrays
+    2 Loops
+    3 If else Conditions
+    4 Classes object
+    5 Methods
+    6 String class
+======================================================================================
+What is MethodOverLoading:
+    When same name method exists in a class but with different number of parameters or different type if parameters
+    or different sequence of parameters it is called methodOverLoading.
+Why we should use MethodOverLoading:
+    1) Makes all your code readable
+    2) Make the life of the end users easy they don't have to memorize many methods names.
+How we can use MethodOverLoading.
+    We can have same name method but we have to follow the below rules
+    1) By passing different number of parameters
+    2) We can change the datatype of parameters.
+    3) We can also overload a method by changing the sequence of parameters

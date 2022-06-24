@@ -22,7 +22,7 @@ class Chair extends Furniture {
     String color = "Grey";
     void printColor() {
         String color = "White"; // always local variable are preferred
-        System.out.println(super.color); //takes name from Furniture class "Black"
+        System.out.println(super.color); //takes name from Furniture class "Black" used for parent class
         System.out.println(this.color);
         System.out.println(color);
     }

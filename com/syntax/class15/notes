@@ -1,0 +1,106 @@
+How to change background color?
+    Double-click <<shift> key twice > type Theme > select Theme > select IntelliJ Light.
+
+What is a Method?
+    A method in Java is a block of code (group of Java statements)?
+    It defines the behavior of a class.
+
+Why we should use Methods:
+    It helps us to remove the duplicate code from our applications.
+    We just create a method and every time we need that logic, we
+    just call the method that contains the logic.
+    It also allows to write the code in the form of modules,
+    which makes the development of large applications easier.
+
+How to use Methods:
+    First, we create the method inside a class.
+    We create the object of that class
+    We call the method by writing the name of the object and then a
+    dot and then the name of the method.
+
+    Example:
+    class Calculator {
+
+    void add(int x, int y) {
+    System.out.println(x+y)
+    }
+    public static void main(String [] args) {
+    Calculator calculator = new Calculator();
+    calculator.add(10, 20);
+    }
+
+    }
+
+Rules to create and use methods:
+
+void add(int x, int y) {
+System.out.println(x + y);
+}
+
+o  void => void is a return type, and it is a must if you want to return a
+    specific data type write the name of that data type like for integer,
+    we write int, for String we write String.
+    If we don't want to return anything we write void.
+    When we write a void, we can't assign a method call to a variable.
+o  add => next we write the name of the method which can be anything
+    it should follow the rules for giving a name to a variable (variables
+    can't start with numbers or special characters).
+o  () => we specify the parameters here and we can pass any data type
+    inside these parentheses. They are optional, we can leave them empty.
+
+{
+System.out.println(x + y);
+}
+
+The Body of the method that contains the java statements:
+o add(int x, int y) = > this part with the name of the method and tis
+    parameters is called signature of a method
+o  void add(int x, int y) header of the method
+
+=====================================================================
+
+Types of variables in Java:
+    There are 3 types of variables in Java: local, instance and static.
+
+o  Local variables – If a variable is inside a method or a part of its
+    parameters or a loop or a switch statement or if else condition
+    it is called a local variable.
+
+o  Instance variables – if a variable is inside the class but
+    outside of any block of code like method, loop, switch statement,
+    if else condition, it is called an instance variable.
+
+o  Static variables – if an instance variable has a static keyword
+    with it, then it is called a static variable.
+
+Why do we need to learn about different types of variables?
+    1) It helps us to reduce the amount of RAM that our application will be
+       using when it will be running.
+    2) With the help of these variables, we can pass information
+       between methods of a class.
+     3) Local variables occupy the memory for the shortest period of time.
+        As soon as your method is done executing, they are destroyed by a
+        special program called garbage collector.
+
+How to use these variables?
+    Local: create inside a block of code
+
+Pros vs. Cons:
+    Local variable –
+        Pros: they occupy the memory for the shortest period of time.
+              So, always try to use local variables, when possible, to save
+              memory. Rule of thumb always prefer Local variables.
+        Cons: they are very limited in scope, which means we cannot access
+              them outside of the method or that block of code.
+              Local variables are the preferred way.
+
+    Instance variable –
+        Pros – they have broader scope as compared to the local variable
+               which means we can access them in all the methods of that class.
+        Cons – they occupy the space in your RAM for longer periods of time.
+
+    Static variables –
+        Pros – We can call static variables without creating an object
+               of a class. We can share a single variable between all
+               the objects of a class.
+        Cons -

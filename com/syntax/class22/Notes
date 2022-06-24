@@ -1,0 +1,46 @@
+What is Method Overloading in Java:
+    With the help of method overloading we can have many methods with same name but different parameters in a class
+Why we should use MethodOverloading.
+    1) Cleaner code if multiple methods are doing   the same thing we don't need to come up with different name.
+    2) Flexibility for the end user.
+How we can use  MethodOverloading in Java:
+    We can overload a method by changing three things
+    1) Number of parameters
+    2) Change the data type of parameters
+    3) We can change the sequence of parameters.
+Class Calculator {
+
+int  sum (in num1, int num2) {
+ return num+num2:
+ }
+
+ in sum (in num1, int num2, int num3) {
+ return num+num2+num3:
+ }
+ }
+ double sum (in num1, int num2, int num3) {
+  return num+num2+num3:
+ }
+ }
+
+ Rules:
+    1) Method names should be same but parameters should be different
+    2) We can't overload a method by just changing it is return type
+    3) We can also overload constructors by following the same rules
+    ==================================================================================
+What is MethodOverriding:
+    Happens when same method exists inside the parant class and the child class.
+Why we should override a method:
+    If we are inheriting from a Parent class and we don't like the implementation of a method from the parent clas
+    we can provide our own implementation.
+    Sometimes it done to improve the performance of code.
+How we can override a method:
+    When we inherit from a class we just need to rewrite that  method inside the child class. All should
+    be same except the body and access modifier
+Rules:
+    1) For Override we must inherit from a class
+    2) The method in the parent class that we want to override must be exactly the same as method in the
+    child class only the access modifiers can be different
+    3) The access modifiers in the Child class can only be increased with respect to the visibility for example
+    we can change default to protected or to public, but we can't make it private.
+    4) If something is not inherited we can't override it for example private methods and constructors.
