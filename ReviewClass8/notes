@@ -1,2 +1,20 @@
 this. keyword - use to refer to the current object
 this. - used with instance variable
+      - used with method
+this() = used to call current class constructor
+               method
+    optional           optional        MUST     MUST
+access modifier non access modifier returnType name() {
+logic;
+}
+             variables
+   optional           optional        MUST     MUST
+access modifier non access modifier dataTypes name:
+
+static method and variables can only work with static method and variable
+instance method and variables can work with static and instance  method and variables
+
+Access modifiers define visibility:
+
+same class  same package  package   project
+private => default => protected => public

@@ -26,6 +26,12 @@ public class Hospital {
         doctor.work();
         doctor1.work();
 
+        doctor1.treat("Samantha");
+
+        //accessing static method
+
+        Doctor.study("GTU");
+
         }
     }
 

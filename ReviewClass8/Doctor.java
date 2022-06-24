@@ -2,12 +2,13 @@ package ReviewClass8;
 
 public class Doctor {
 
-    String firstName, lastName, speciality;
+    String firstName, lastName;
+    String speciality;
     int experience;
-    double salary;
-    static String hospital;
+   private  double salary;
+   public static String hospital;
 
-    Doctor(String firstName, String lastName) {
+   public Doctor(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -17,15 +18,26 @@ public class Doctor {
         this.experience = experience;
     }
 
-    void printInfo() {
+    public void printInfo() {
         System.out.println("Doctor name is "+firstName+" "+lastName+" "+" speciality is "+speciality);
     }
 
-    void work() {
+    protected void work() {
         System.out.println("Doctor "+lastName+" works at "+hospital);
     }
 
+    void treat(String patientName) {
+        printInfo();
+        System.out.println("Treats patient "+patientName);
+    }
 
+    private void getPaid() {
+        System.out.println("Doctor "+lastName+" gets paid ");
+    }
+
+  public static void study(String university) {
+        System.out.println("Doctor studied at "+university+" and now works at "+hospital); // static method  should be used only with static variables
+    }
 
 
 }
