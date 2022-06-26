@@ -4,6 +4,7 @@ import ReviewClass8.Doctor;
 
 public class MedicalUniversity {
 
-    Doctor doc = new Doctor("john", "Smith");
+    Doctor doctor = new Doctor("john", "Smith");
+
 
 }
