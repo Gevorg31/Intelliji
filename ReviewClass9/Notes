@@ -1,0 +1,69 @@
+Four Pillars of OOPS
+1) Inheritance
+2) Polymorphism
+3) Abstraction
+4) Encapsulation
+
+Some of the benefits of OOPS
+    1) Code re-usability
+    2) Cleaner code
+    3) More flexibility
+    4) Less code
+    5) Enforcing rules and hiding the complexity and only focusing on the ideas
+    6) Secure code
+1. Inheritance
+    This is a mechanism in Java through which a class can acquire the properties and methods
+    of another classes.
+Wgy should we use inheritance :
+    If a piece of code is already   present in a class instead of rewriting it or
+    copying it we can extend our class from that class and we will get all the non private
+    methods and fields of that class. It can save a lot of time. It's also good for performance reasons.
+Disadvantages of Inheritance:
+    1. We get the unwanted code as well when we inherit from a class.
+    2. Classes are tightly coupled. Classes are married. If we change something in the
+    parent class it affects all the child classes.
+How can we use inheritance:
+    We use the extends keyword to inherit the classes
+Rules:
+    1) Inheritance is one way from parent to child only
+    2) In Java we can't inherit from multiple classes
+    3) Final classes can't be inherited. Classes which are declared with final keyword
+    are called final classes
+    4) Private members (fields and methods) are not inherited
+    5) Constructor are not inherited but we can call them using super()
+    6) Child classes must provide a matching constructor
+Types of Inheritance:
+    1) Single inheritance
+    2) Multilevel inheritance
+    3) Hierarchical inheritance
+Single inheritance:
+    Only one parent and one child class
+Multilevel inheritance:
+     When we have a parent and a child class and one or many intermediate classes we call
+     it multilevel inheritance
+Hierarchical Inheritance:
+      When we have a single Parent class and multiple direct child classes it is called  Hierarchical
+=========================================================================================================
+Super Keyword:
+    Super is a keyword that we use to refer to the parent class fields, methods or constructors.
+Why should we use super keyword:
+    1) If we have same name field inside the parent class and child class we can use super keyword.
+    To distinguish these fields. It's not that common
+    2) We can use the super() to call the constructor of the parent class as they are not inherited
+    3) If we have same name methods inside the parent and the child class we can use super keyword
+    to call the method from the parent class
+=========================================================================================================
+Method Overloading:
+    Whenever same name method exists in a class with different parameters we call in method overloading.
+Why we should use method overloading:
+    It helps us write code more cleaner and readable code and also provide the flexibility to have
+    same name method in a class
+How to create an overloading method:
+    Create same method name but make sure this differs in the number of parameters or
+    in types of parameters or in sequence of parameters.
+Rules:
+    1. Method name should be the same but parameters should be different.
+    2. Bu just changing the return type we can't overload a method
+    3. We can't overload by just changing the access modifiers(private, protected, default - (not a key word),
+    public and non-access modifier(final, static, abstract)
+    4. We can also overload a constructor in the same manner as we do for method
