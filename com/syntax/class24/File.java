@@ -5,7 +5,7 @@ package com.syntax.class24;
 // provide specific implementation of open behaviour: Example: to open .java file
 // we need notepad++ or sublime text, to open .doc file we need Microsoft word to be installed etc
 
-public abstract class File {
+ abstract  class File {
 
     abstract void open();
 
