@@ -1,0 +1,42 @@
+What is an interface:
+    Interface is a contract that is similar to a class but all the fields inside a class
+    are public static final(constants) and all the method by default are also public
+Why should we learn about interfaces:
+    We can implement abstraction using interfaces
+    When classes are logically connected to each other and we want to have instance
+    fields and implemented methods as well while doing abstraction then we should
+    go with abstract class
+How can i use an interface:
+    We use interface keyword instead of a class and we start creating abstract method
+Rules:
+    All the fields inside an interface are public static final
+    No instance fields means no constructor is required
+    No instance method in interface and all the methods vy default are abstract
+    When we implement the methods from the interface we use the implements keyword
+    Multiple inheritance is supported by interfaces in Java
+    Interface can extend another interface
+    Variables in interfaces can't be private, protected or default
+    ======================================================================================
+Encapsulation in java:
+    Encapsulation is a 4th pillar of OOPs
+    Is a mechanism that provides us security. If we use encapsulation we can have more security
+How we should use Encapsulation:
+    Make your variables as private
+    Create setter and getter methods to read and write this fields
+==========================================================================================
+Basic unit to store is a variable
+it's easy to access the value by the variable name we don't need to concern about indexes
+Problem with variables:
+    1) They  can only store value at a time
+    2) If we want to store more then one value using variables we have to create more variables.
+Arrays:
+    Arrays can hold multi[ple values in a single variable then use indexes to access those values
+Upside of Arrays:
+    1) Arrays are the fastest data structure when it comes to process the data
+    2) Arrays occupy 4 times less memory than an arrayList
+
+Problem with Array:
+    1) They are fixed in size means once we have created an array we can't modify it's size
+    2) No built-in methods in arrays like add, remove, findIndex etc
+ArrayList:
+add() -- we use it to add the element an arrayList
