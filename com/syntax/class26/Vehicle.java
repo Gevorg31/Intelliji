@@ -13,17 +13,17 @@ public interface Vehicle {
     void calculateSalePrice();
 
     class Truck implements Vehicle {
-        double weight = 2500;
+        double weight = 1500;
 
         public void calculateSalePrice(double vehiclePrice) {
 
-            double returnedPrice;
+            double discountPrice;
             if (weight > 2000) {
-                returnedPrice = (vehiclePrice * 10) / 100;
-                System.out.println("The price of the truck includes a 10% discount " + returnedPrice);
+                discountPrice = (vehiclePrice * 10) / 100;
+                System.out.println("The price of the truck includes a 10% discount " + discountPrice);
             } else {
-                returnedPrice = (vehiclePrice * 20) / 100;
-                System.out.println("The price of the truck includes a 20% discount " + returnedPrice);
+                discountPrice = (vehiclePrice * 20) / 100;
+                System.out.println("The price of the truck includes a 20% discount " + discountPrice);
             }
         }
 
@@ -32,18 +32,19 @@ public interface Vehicle {
 
         }
     }
+
     class Sedan implements Vehicle {
-        int length = 25;
+        int length = 15;
 
         public void calculateSalePrice(double vehiclePrice) {
 
-            double returnedPrice;
+            double discountPrice;
             if (length > 20) {
-                returnedPrice = (vehiclePrice * 5) / 100;
-                System.out.println("The price of the Sedan includes a 5% discount " + returnedPrice);
+                discountPrice = (vehiclePrice * 5) / 100;
+                System.out.println("The price of the Sedan includes a 5% discount " + discountPrice);
             } else {
-                returnedPrice = (vehiclePrice * 10) / 100;
-                System.out.println("The price of the sedan includes a 10% discount " + returnedPrice);
+                discountPrice = (vehiclePrice * 10) / 100;
+                System.out.println("The price of the sedan includes a 10% discount " + discountPrice);
             }
         }
 
@@ -55,10 +56,10 @@ public interface Vehicle {
         static class TestVehicle {
             public static void main(String[] args) {
                 Sedan sedan = new Sedan();
-                sedan.calculateSalePrice(40000);
+                sedan.calculateSalePrice(60000);
 
                 Truck truck = new Truck();
-                truck.calculateSalePrice(125000);
+                truck.calculateSalePrice(55000);
             }
         }
     }

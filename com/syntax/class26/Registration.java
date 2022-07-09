@@ -15,36 +15,50 @@ public class Registration {
     private String password;
 
     public void callEmail(String email) {
-        if (email.equals(email+"@yahoo.com")) {
-            System.out.println("Correct yahoo email");
+        if (!email.contains("yahoo")) {
+            System.out.println("Please use correct email yahoo.com");
         } else {
-            System.out.println("Please provide a yahoo email");
+            this.email=email;
         }
     }
     public void callUserName(String userName) {
-        if (userName.isEmpty() || userName.length() > 6) {
-            System.out.println("Valid username");
-        } else {
-            System.out.println("Username is empty, less then 6 characters");
+        if (userName.isEmpty()) {
+            System.out.println("Invalid username, is empty");
+        } else if (userName.length() <=6){
+            System.out.println("Username  must be larger then 6 characters");
+        }else {
+            this.userName=userName;
         }
     }
     public void callPassword(String password) {
-        if (password.isEmpty() || password.length() > 6) {
-            if (!password.equals(userName)) {
-                System.out.println("Valid password and not contain username");
-            }
+        if (password.contains(userName)) {
+            System.out.println("password can't contain username");
+        }else if(password.length()<=6){
+            System.out.println("Password must be larger 6 characters");
+        }else {
+            this.password=password;
         }
-        else {
-            System.out.println("Password is empty, less then 6 characters and contains username");
-        }
+    }
+    public String getEmail() {
+        return email;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public String getPassword() {
+        return password;
     }
 }
 class FullInfo extends Registration {
     public static void main(String[] args) {
         Registration registration = new Registration();
-        registration.callEmail("Gevorg2022");
-        registration.callUserName("Aladdin2222");
-        registration.callPassword("Syntax2222");
-
+        registration.callEmail("yahoo.com");
+        System.out.println("Email : "+registration.getEmail());
+        registration.callUserName("JavaBro");
+        System.out.println("User name : "+registration.getUserName());
+        registration.callPassword("Java2022");
+        System.out.println("Password : "+registration.getPassword()); 
     }
 }
