@@ -1,0 +1,55 @@
+What is a List:
+    List is an interface inside the collections framework which have below properties
+    1. Insertion order is maintained. The first element that i will be inserting in element 0 and up
+        we have total control of array
+    2. I can store duplicate data
+List is implemented by many classes but we will be focusing on ArrayList and LinkedList:
+ArrayList:
+    When my requirement is that i will be reading data a lot then i should be going with ArrayList
+LinkedList:
+    Most of operations will be writing the data to a list in between ot in the start or shifting
+    data from one location to other location, manipulations with data, we should use LinkedList
+Iterator:
+    Is a interface that has three methods hasNext(), next(), and remove()
+    whenever we try to modify the size of a list using simple loop there are chances that it
+    will not work or will trow an error, because lusts are dynamic and can chanhe the size at runtime
+    so to be always nt the safe side we should use Iterator
+
+    -----------------------------------------------------------------------------------------------
+Set:
+1. Insertion order is not maintained
+2. Duplicates are not allowed
+We will be discussing three types of set:
+    1) HashSet
+    2) LinkedHashSet
+    3) TreeSet
+HashSet:
+    Upside: But it is the fastest of all
+    Downside: No Insertion order is maintained
+LinkedHashSet:
+    Upside: Insertion order is maintained
+    Downside: Retrieval of element will be super slow, insertion speed slower than Hashset
+TreeSet:
+    Upside: Elements will always be in sorted form
+    Downside: Insertion speed is lowest of all
+    Retrieval speed better than LinkedHashSet but slower than HashSet
+
+    -----------------------------------------------------------------------------------------------
+
+Map:
+    Map is an interface in java that allow us to store key value pairs
+    we can't have duplicate keys but we can have duplicates values
+We will be discussing three of them:
+    1. HashMap
+    2. LinkedHAshMap
+    3. TreeMap
+HashMAp:
+    Upside: Fastest when it comes to insert and retrieve the element
+    Downside: No insertion order
+LinkedHAshMap:
+    Upside: Insertion order will be maintained
+    Downside: Retrieval will be slowest
+TreeMap:
+    Upside: Data Will be stored in the Sorted form based on keys
+    Downside: Insertion is the slowest
+

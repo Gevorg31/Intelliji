@@ -17,7 +17,7 @@ public class Demo7ArrayListDiamondOperator {
         System.out.println("subject = " + subject); //soutv to printout array or arrayList
         System.out.println(subject.contains("Selenium"));
         subject.get(0);// will return the actual element
-        System.out.println("subjects.ger(0) = "+subject.get(0));
+        System.out.println("subjects.get(0) = "+subject.get(0));
         subject.clear();
 
 

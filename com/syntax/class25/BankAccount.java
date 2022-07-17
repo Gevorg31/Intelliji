@@ -8,7 +8,7 @@ public class BankAccount {
    private  int age;
 
     public void setName(String name) {
-        String nameWithoutNumbers = name.replaceAll("[^Z-Za-z]","");
+        String nameWithoutNumbers = name.replaceAll("[^A-Za-z]","");
         if(nameWithoutNumbers.equals(name)) {
             System.out.println("Number not present inside the name checking more rules");
             this.name=name;

@@ -30,4 +30,11 @@ class S21Ultra implements IP65,FastChargeAble,FiveG{
     public void speed() {
         System.out.println(" you can download things super fast because now i also support 5G");
     }
+
+    public static void main(String[] args) {
+        S21Ultra s21Ultra = new S21Ultra();
+        s21Ultra.wash();
+        s21Ultra.speed();
+        s21Ultra.charging();
+    }
 }
