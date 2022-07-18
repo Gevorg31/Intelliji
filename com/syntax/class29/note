@@ -1,0 +1,38 @@
+Set Interface:
+    Set in Java does not allow duplicate values. There are many types of sets but we will only discuss
+     the most widely used ones which are
+     HashSet
+     LinkedHashSet
+     TreeSet
+      HashSet:
+Most commonly used type of set it is fastest when it comes to insert and retrieve the data
+     Insertion order is not maintained
+     No get method to get a single value
+LinkedHashSet:
+    Insertion order is maintained
+    Insertion speed is comparable to HashSet but the retrival speed is the slowest
+TreeSet:
+    THe data is stored in the sorted form
+    Insertion speed is slow. Retrieval speed is better than LinkedListSet but slower than HashSet
+
+Mostly use to remove duplicates
+
+==================================================================================================
+Map:
+    Allow to store key value pairs. First data is a key and second is value
+    Keys can't be Duplicates but values can be
+    Map<Integer,String> items = new HashMap<>();
+
+1) HashMap
+2) LinkedHashMap
+3) TreeMap
+
+HashMap:
+    It is fastest when it comes to insert and retrieve the data
+    Insertion order is not maintained
+LinkedHAshMap:
+    Insertion order is maintained
+    Insertion speed is lower than HashMap. Retrieval speed is slowest of all
+TreeMap
+    Data is stored in the sorted form always
+    Insertion speed is very slow

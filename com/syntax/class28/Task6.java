@@ -1,5 +1,7 @@
 package com.syntax.class28;
 
+import java.util.ArrayList;
+
 public class Task6 {
     public static void main(String[] args) {
         //Create a class Insurance that will have an attribute as insuranceName and unimplemented
@@ -10,6 +12,7 @@ public class Task6 {
         //Using for loop/advanced for loop/ iterator access all methods of the class.
 
 
+
     }
 }
 abstract class Insurance {
@@ -18,9 +21,11 @@ abstract class Insurance {
     abstract void cancelInsurance();
 }
 class Car {
+    String carModel;
 
 }
 class Pet {
+    String petType;
 
 }
 class Health {
