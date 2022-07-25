@@ -43,7 +43,7 @@ We will be discussing three of them:
     1. HashMap
     2. LinkedHAshMap
     3. TreeMap
-HashMAp:
+HashMap:
     Upside: Fastest when it comes to insert and retrieve the element
     Downside: No insertion order
 LinkedHAshMap:

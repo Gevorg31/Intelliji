@@ -17,6 +17,7 @@ public class MapDemo3 {
         for (String key:keys) {
             System.out.println("Keys = "+key);
         }
+        System.out.println("_____________________");
         // All the calues in the form of a collection
         Collection<Double> values = fruits.values();
         for (Double value:values) {

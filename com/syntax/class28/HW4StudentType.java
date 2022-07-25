@@ -9,7 +9,7 @@ public class HW4StudentType {
     // Display name of each student.
 
     public static void main(String[] args) {
-        Map<String,Integer> studentType = new LinkedHashMap<>();
+        HashMap<String,Integer> studentType = new HashMap<>();
         studentType.put("Andrey",3657);
         studentType.put("Gevorg",3659);
         studentType.put("Liana",3658);

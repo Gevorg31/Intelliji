@@ -10,7 +10,7 @@ Most commonly used type of set it is fastest when it comes to insert and retriev
      No get method to get a single value
 LinkedHashSet:
     Insertion order is maintained
-    Insertion speed is comparable to HashSet but the retrival speed is the slowest
+    Insertion speed is comparable to HashSet but the retrieval speed is the slowest
 TreeSet:
     THe data is stored in the sorted form
     Insertion speed is slow. Retrieval speed is better than LinkedListSet but slower than HashSet

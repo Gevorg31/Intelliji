@@ -1,0 +1,16 @@
+FileHandling:
+    Reading/Writing data to a file is called file handling
+Why FileHandling is important
+    The data that changes frequently we don't put that data with code
+    because if we have to change that data we need to recompile code
+    and redeploy the code on production server again it's a very lengthy process and
+    might take weeks. The other issue is we might accidentally change the code as well
+    when changing the data and might introduce bugs
+Why to handle file in Java:
+    We follow below steps to read and write data to files
+    1. We need to know the path of file
+    2. Navigate to that location using FileInputStream if we are planning to read a
+    data from a file and FileOutStream if we are planning to write the data from file
+    3. Need to use the proper class that can handle that file for example if we need to
+    read/write data from properties class we can use the Properties class and CSSFWorkBook
+    class for Excel class

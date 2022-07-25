@@ -1,0 +1,33 @@
+Maps in java:
+    Map is an interface in Java that allow us to store key and value pairs. Keys can't be duplicate
+    but values can be.
+    1) HashMap
+    2) LinkedHAshMap
+    3) TreeMap
+HashMap:
+    Upside: It's the fastest of all
+    Downside: Doesn't maintain the insertion order
+LinkedHAshMap:
+    Upside: Order is maintained
+    Downside: Retrieval speed is slow. Insertion speed is better than TreeMap but slower than HashMap
+TreeMap:
+    Upside: Data is always stored in the sorted form
+    Downside: Insertion speed is slowest of all. Retrieval speed is slower than HashMap but faster than LinkedHashMap
+
+Important Note:
+We can use three methods to get the data from map
+    1) EntrySet(): key, value store inside an object of type Map.Entry. We can use getKey method
+    on this object to get the key of that entry and getValue method to get the value of that entry.
+    2) KeySet(): it will return all keys from a map in the form of a set
+    3) values(): it will return us all the values from a map in the form of collection
+    ============================================================================================
+FileHandling in Java:
+    We need to have below three things in order to read/write a file manually
+    1. Path/location of the file that we want to read/write
+    2. We need to navigate to that file on
+    3. We need to have a software installed on our computer to interact with that file
+
+    We need to have below three things in order to read/write a file manually
+    1. PAth of a file we can store inside of a String
+    2. We can use the DileInputStream/FileOutputStream class to navigate to that folder
+    3. We use a specific Java class that can handle that file type

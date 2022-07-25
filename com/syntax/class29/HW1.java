@@ -1,9 +1,6 @@
 package com.syntax.class29;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class HW1 {
     //Create a map of a building. Store floor number and it is associated company name.
@@ -18,16 +15,22 @@ public class HW1 {
         companyFloors.put(1,"Google");
         companyFloors.put(2,"Syntax");
         companyFloors.put(3,"Amazon");
-        companyFloors.put(3,"Google");
+        companyFloors.put(4,"Google");
         companyFloors.put(5,"Brinks");
         companyFloors.put(6,"iBuyPower");
-        companyFloors.put(6,"Syntax");
+        companyFloors.put(7,"Syntax");
 
-        System.out.println(companyFloors.entrySet());
+        System.out.println(companyFloors.size());
 
         Iterator<Map.Entry<Integer, String>> iterator = companyFloors.entrySet().iterator();
+          while (iterator.hasNext()) {
+              Map.Entry<Integer, String> floor = iterator.next();
+                if (companyFloors.replace(4,"Google","Aladdin")) {
+                }
+           }
+          companyFloors.remove(7);
 
+        System.out.println(companyFloors);
         }
-
     }
 
